@@ -6,7 +6,7 @@ export default function ThemeViewer ()
   return (
     <section className='ThemeViewer'>
       <section className='ViewerWrapper'>
-        <h3 className='TitleViewer Title'>Theme Palette</h3>
+        <h2 className='TitleViewer Title'>Theme Palette</h2>
         <ThemeModel />
         <p className='TextViewer Text'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
