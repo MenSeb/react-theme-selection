@@ -125,3 +125,24 @@
     }
   }
 }
+
+@mixin fluid ( $props, $min-vw, $max-vw, $min-val, $max-val )
+{
+  $val: $max-val - $min-val;
+  $vw: $max-vw - $min-vw;
+
+  @each $prop in $props { #{ $prop }: $min-val }
+
+  @media ( min-width: $min-vw )
+  {
+    @each $prop in $props
+    {
+      #{ $prop }: calc( #{ $min-val } + #{ $val } * ( 100vw - #{ $min-vw } ) / #{ $vw } )
+    }
+  }
+
+  @media ( min-width: $max-vw )
+  {
+    @each $prop in $props { #{ $prop }: $max-val }
+  }
+}
