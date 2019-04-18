@@ -1,0 +1,47 @@
+.ThemeAuthor
+{
+  @extend %flex-center;
+
+  @include size( auto, 100% );
+
+  a,
+  p
+  {
+    @extend %transition-colors;
+
+    color: $colorColor;
+
+    &:hover
+    {
+      color: $colorHover;
+    }
+  }
+
+  a
+  {
+    padding-left: 10px;
+  }
+
+  p
+  {
+    @extend %flex-center;
+
+    @include size( auto, 100% );
+
+    white-space: nowrap;
+  }
+
+  svg
+  {
+    @include size( auto, 100% );
+
+    margin: 0 10px;
+
+    fill: $colorColor;
+
+    &:hover
+    {
+      fill: $colorHover;
+    }
+  }
+}
