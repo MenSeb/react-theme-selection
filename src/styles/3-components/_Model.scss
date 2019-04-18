@@ -1,0 +1,27 @@
+.ThemeModel
+{
+  @extend %transition-colors;
+
+  @include box-size( $sizeModel );
+
+  background: $colorBorder;
+  border: 2.5px solid $colorBorder;
+
+  > *
+  {
+    @include size( 100%, 25% );
+
+    font-weight: bold;
+    font-size: 1.25em;
+  }
+
+  $length: length( $colors );
+  @for $i from 1 through $length
+  {
+    > *:nth-of-type( #{ $i } )
+    {
+      color: var( --color-#{ nth( $colors, $length - $i + 1 ) } );
+      background: var( --color-#{ nth( $colors, $i ) } );
+    }
+  }
+}
