@@ -26,7 +26,7 @@
   flex-wrap: $w;
 }
 
-@mixin scrollbar ( $size )
+@mixin scrollbar ( $size, $reversed: false )
 {
   $space: 3 * $size;
   $twice: 2 * $size;
@@ -38,7 +38,6 @@
 
   @include flex-parent( $w: wrap );
 
-  margin: $space $size $space 0;
   padding: 0 $size 0 $space;
 
   overflow-x: hidden;
@@ -49,6 +48,18 @@
   // Mozilla Firefox
   scrollbar-color: $colorColor $colorBackground;
   scrollbar-width: thin;
+
+  // Reversed logic
+  @if $reversed == true
+  {
+    margin: $space 0 $space $size;
+
+    transform: scale3d( -1, 1, 1 );
+  }
+  @else
+  {
+    margin: $space $size $space 0;
+  }
 
   > *:not( :last-child )
   {
