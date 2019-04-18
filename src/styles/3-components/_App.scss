@@ -1,8 +1,43 @@
 .App
 {
-  @extend %full-size;
+  @extend %full-size, %flex-center;
+
+  flex-direction: column;
 
   background: $colorBackground;
 
   overflow: hidden;
+
+  header,
+  main,
+  footer
+  {
+    padding: 10px;
+  }
+
+  header
+  {
+    @include size( $sizeHeader... );
+
+    @include flex-parent( $ai: center );
+  }
+
+  main
+  {
+    @extend %flex-center;
+
+    @include size( $sizeMain... );
+
+    border: 5px solid $colorBorder;
+
+    border-left: 0;
+    border-right: 0;
+  }
+
+  footer
+  {
+    @include size( $sizeFooter... );
+
+    @include flex-parent( $ai: center );
+  }
 }
