@@ -1,0 +1,11 @@
+.Title
+{
+  @extend %flex-center, %transition-colors;
+
+  color: $colorColor;
+
+  &:hover
+  {
+    color: $colorHover;
+  }
+}
