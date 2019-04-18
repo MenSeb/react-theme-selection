@@ -1,0 +1,12 @@
+@function pure ( $number )
+{
+  @if ( type-of( $number ) != number )
+  {
+    $msgInvalid: 'Invalid param #{ $number } in function pure.';
+    $msgType: 'Param should be of type number.';
+
+    @error '#{ $msgInvalid } #{ $msgType }';
+  }
+
+  @return if( unitless( $number ), $number, $number / ( $number * 0 + 1 ) );
+}
