@@ -12,8 +12,8 @@ export default function ThemeSelection ()
       {
         themes.map(
           ([ id, theme ]) => (
-            <li id={ id } key={ id } className='Theme'>
-              <ThemePalette theme={ theme } />
+            <li key={ id } className='Theme'>
+              <ThemePalette id={ id } theme={ theme } />
             </li>
           )
         )
