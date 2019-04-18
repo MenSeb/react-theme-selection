@@ -25,3 +25,92 @@
   align-content: $ac;
   flex-wrap: $w;
 }
+
+@mixin scrollbar ( $size )
+{
+  $space: 3 * $size;
+  $twice: 2 * $size;
+
+  @include size(
+    calc( 100% - #{ $size } ),
+    calc( 100% - 2 * #{ $space } ),
+  );
+
+  @include flex-parent( $w: wrap );
+
+  margin: $space $size $space 0;
+  padding: 0 $size 0 $space;
+
+  overflow-x: hidden;
+  overflow-y: scroll;
+
+  scroll-behavior: smooth;
+
+  // Mozilla Firefox
+  scrollbar-color: $colorColor $colorBackground;
+  scrollbar-width: thin;
+
+  > *:not( :last-child )
+  {
+    margin-bottom: $space;
+  }
+
+  // Scrollbar
+  &::-webkit-scrollbar
+  {
+    @include size( $size );
+  }
+
+  // Track
+  &::-webkit-scrollbar-track
+  {
+    color: $colorColor;
+    background-color: $colorBackground;
+  }
+
+  // Handle
+  &::-webkit-scrollbar-thumb
+  {
+    color: $colorColor;
+    background-color: $colorColor;
+    border-radius: $space;
+  }
+
+  // Rules for devices with mouse here
+  @media ( pointer: fine )
+  {
+    // Mozilla Firefox
+    scrollbar-color: $colorBackground $colorBackground;
+
+    // Track
+    &::-webkit-scrollbar-track
+    {
+      color: $colorColor;
+      background-color: $colorBackground;
+    }
+
+    // Handle
+    &::-webkit-scrollbar-thumb
+    {
+      color: $colorColor;
+      background-color: $colorBackground;
+    }
+
+    &:hover
+    {
+      // Mozilla Firefox
+      scrollbar-color: $colorColor $colorBackground;
+
+      // Handle
+      &::-webkit-scrollbar-thumb
+      {
+        background-color: $colorColor;
+
+        &:hover
+        {
+          background-color: $colorHover
+        }
+      }
+    }
+  }
+}
