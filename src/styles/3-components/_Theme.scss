@@ -2,5 +2,9 @@
 {
   @extend %flex-center;
 
+  background: $colorBorder;
+  border: 2.5px solid $colorBorder;
+  border-radius: 2.5px;
+  overflow: hidden;
   pointer-events: none;
 }
