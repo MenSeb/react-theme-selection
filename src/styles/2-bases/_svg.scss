@@ -1,4 +1,4 @@
 svg
 {
-  @extend %full-size;
+  @extend %full-size, %transition-colors;
 }
