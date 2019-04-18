@@ -1,0 +1,31 @@
+.ThemeViewer
+{
+  @extend %flex-center;
+
+  @include size( $sizeViewer... );
+
+  padding: 25px;
+
+  .ViewerWrapper
+  {
+    @extend %full-size, %flex-center;
+
+    flex-direction: column;
+    border: 2.5px solid $colorBorder;
+  }
+
+  .Title
+  {
+    @include size( 100%, 25% );
+  }
+
+  .Text
+  {
+    @include size( 100%, 50% );
+
+    @include scrollbar( 7.5px );
+
+    text-align: justify;
+    line-height: 2;
+  }
+}
