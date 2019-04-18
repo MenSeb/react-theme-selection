@@ -1,7 +1,5 @@
 .ThemeBrand
 {
-  @extend %flex-center;
-
   @include size( auto, 100% );
 
   padding: 5px 10px;
