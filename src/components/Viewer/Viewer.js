@@ -1,16 +1,13 @@
 import React from 'react'
+import { ThemeModel } from '..'
 
 export default function ThemeViewer ()
 {
   return (
     <section className='ThemeViewer'>
       <section className='ViewerWrapper'>
-        <h3 className='Title'>
-          Select any Theme Palette to update colors
-        </h3>
-        <h3 className='Title'>
-          Hover any text, title or scrollbar to change color
-        </h3>
+        <h3 className='Title'>Theme Palette</h3>
+        <ThemeModel />
         <p className='Text'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           Phasellus in justo aliquam, interdum turpis pharetra, aliquet magna.
