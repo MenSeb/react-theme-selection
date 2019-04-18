@@ -2,4 +2,9 @@
 {
   cursor: pointer;
   pointer-events: all;
+
+  *
+  {
+    pointer-events: none;
+  }
 }
