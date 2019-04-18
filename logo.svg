@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version='1.1' width='200' height='200' viewBox='-10 -10 20 20' xmlns='http://www.w3.org/2000/svg'>
+  <g id='logo'>
+    <path d='M-9.5 -9.5 h19 v19 h-19 z M-9 -9 v18 h18 v-18 z' />
+    <path fill='#FFF' d='M-9 -9 h18 v18 h-18 z M-8.5 -8.5 v17 h17 v-17 z' />
+    <path d='M-8.5 -8.5 h17 v17 h-17 z M-8 -8 v16 h16 v-16 z' />
+
+    <circle fill='#f30e5c' r='1' cx='3' />
+    <circle fill='#ffe867' r='1' cx='-3'/>
+    <circle fill='#228c7b' r='1' cy='3' />
+    <circle fill='#571179' r='1' cy='-3' />
+    <circle fill='#2e89ba' r='1' cx='6' cy='3' />
+    <circle fill='#952e4b' r='1' cx='3' cy='6' />
+    <circle fill='#ff6138' r='1' cx='6' cy='-3' />
+    <circle fill='#503bff' r='1' cx='3' cy='-6' />
+    <circle fill='#be0eaa' r='1' cx='-6' cy='3' />
+    <circle fill='#e00543' r='1' cx='-3' cy='6' />
+    <circle fill='#22eaaa' r='1' cx='-6' cy='-3' />
+    <circle fill='#f6378f' r='1' cx='-3' cy='-6' />
+
+    <circle fill='#0c3c78' r='1.5' />
+    <circle fill='#f7b633' r='1.5' cx='6' cy='6' />
+    <circle fill='#a7d129' r='1.5' cx='-6' cy='6' />
+    <circle fill='#f34573' r='1.5' cx='6' cy='-6' />
+    <circle fill='#ff5722' r='1.5' cx='-6' cy='-6' />
+    <circle fill='#a3816a' r='1.5' cx='3' cy='3' />
+    <circle fill='#a64942' r='1.5' cx='-3' cy='3' />
+    <circle fill='#b0a565' r='1.5' cx='3' cy='-3' />
+    <circle fill='#c70039' r='1.5' cx='-3' cy='-3' />
+    <circle fill='#2a6171' r='1.5' cx='6' />
+    <circle fill='#1cb3c8' r='1.5' cx='-6' />
+    <circle fill='#481380' r='1.5' cy='6' />
+    <circle fill='#044343' r='1.5' cy='-6' />
+  </g>
+</svg>
