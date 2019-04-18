@@ -11,8 +11,6 @@
 
   .Text
   {
-    @extend %flex-center;
-
     @include size( auto, 100% );
 
     white-space: nowrap;
