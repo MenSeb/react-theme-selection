@@ -15,7 +15,12 @@ export default function ThemePalette ({
   })
 
   return (
-    <svg className='ThemePalette' style={ colorsStyle } role='button'>
+    <svg
+      className='ThemePalette'
+      role='button'
+      style={ colorsStyle }
+      viewBox='0 0 4 4'
+    >
       <use xlinkHref='#ThemeSquare' aria-hidden={ true } />
     </svg>
   )
