@@ -8,7 +8,7 @@
 
   .ViewerWrapper
   {
-    @extend %full-size, %flex-center;
+    @extend %full-size, %flex-center, %transition-colors;
 
     max-width: 800px;
     padding: 10px;
