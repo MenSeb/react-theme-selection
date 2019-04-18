@@ -4,25 +4,12 @@
 
   @include size( auto, 100% );
 
-  a,
-  p
-  {
-    @extend %transition-colors;
-
-    color: $colorColor;
-
-    &:hover
-    {
-      color: $colorHover;
-    }
-  }
-
-  a
+  .Link
   {
     padding-left: 10px;
   }
 
-  p
+  .Text
   {
     @extend %flex-center;
 
@@ -31,17 +18,10 @@
     white-space: nowrap;
   }
 
-  svg
+  .Icon
   {
     @include size( auto, 100% );
 
     margin: 0 10px;
-
-    fill: $colorColor;
-
-    &:hover
-    {
-      fill: $colorHover;
-    }
   }
 }
