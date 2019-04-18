@@ -1,6 +1,8 @@
 .ThemeSelection
 {
-  @extend %flex-center;
+  @extend %flex-center, %transition-colors;
 
   @include size( $sizeSelection... );
+
+  border-left: 2.5px solid $colorBorder;
 }
