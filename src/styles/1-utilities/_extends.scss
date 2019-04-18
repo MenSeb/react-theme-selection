@@ -1,0 +1,15 @@
+%full-size
+{
+  @include box-size( 100% );
+}
+
+%flex-center
+{
+  @include flex-parent( $ai: center, $jc: center );
+}
+
+%transition-colors
+{
+  transition-property: background, border, color;
+  transition: $transitionDuration $transitionEasing;
+}
