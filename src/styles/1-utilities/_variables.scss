@@ -8,4 +8,10 @@ $colorHover: var( --color-hover );
 
 $colors: ( background, border, color, hover );
 
+
 $sizeSelection: ( 100px, 100% );
+$sizeViewer: ( calc( 100% - #{ $sizeSelection } ), 100% );
+
+$sizeHeader: ( 100%, 80px );
+$sizeFooter: ( 100%, 60px );
+$sizeMain: ( 100%, calc( 100% - #{ $sizeHeader } - #{ $sizeFooter } ) );
