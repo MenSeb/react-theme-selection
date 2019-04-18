@@ -1,4 +1,6 @@
 svg
 {
   @extend %full-size, %transition-colors;
+
+  fill: currentColor;
 }
