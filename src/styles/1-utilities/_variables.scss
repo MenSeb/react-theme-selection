@@ -10,6 +10,7 @@ $colors: ( background, border, color, hover );
 
 $sizeSelection: ( 100px, 100% );
 $sizeViewer: ( calc( 100% - #{ nth( $sizeSelection, 1 ) } ), 100% );
+$sizeModel: 100px;
 
 $sizeHeader: ( 100%, 80px );
 $sizeFooter: ( 100%, 60px );
