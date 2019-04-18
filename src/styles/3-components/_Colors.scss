@@ -3,7 +3,7 @@
 .Text,
 .Title
 {
-  @extend %flex-center, %transition-colors;
+  @extend %transition-colors;
 
   color: $colorColor;
 
