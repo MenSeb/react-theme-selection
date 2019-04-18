@@ -16,14 +16,14 @@
     border: 2.5px solid $colorBorder;
   }
 
-  .Title
+  .TitleViewer
   {
     @include size( 100%, 25% );
   }
 
-  .Text
+  .TextViewer
   {
-    @include size( 100%, 50% );
+    @include size( 100%, calc( 75% - #{ $sizeModel } ) );
 
     @include scrollbar( 7.5px );
 
