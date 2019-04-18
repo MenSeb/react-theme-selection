@@ -1,17 +1,10 @@
 .ThemeBrand
 {
-  @extend %flex-center, %transition-colors;
+  @extend %flex-center;
 
   @include size( auto, 100% );
 
   padding: 5px 10px;
 
   cursor: default;
-
-  color: $colorColor;
-
-  &:hover
-  {
-    color: $colorHover;
-  }
 }
