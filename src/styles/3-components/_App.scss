@@ -1,6 +1,6 @@
 .App
 {
-  @extend %full-size, %flex-center;
+  @extend %full-size, %flex-center, %transition-colors;
 
   flex-direction: column;
 
@@ -23,7 +23,7 @@
 
   main
   {
-    @extend %flex-center;
+    @extend %flex-center, %transition-colors;
 
     @include size( $sizeMain... );
 
