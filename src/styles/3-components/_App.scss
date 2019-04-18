@@ -1,0 +1,8 @@
+.App
+{
+  @extend %full-size;
+
+  background: $colorBackground;
+
+  overflow: hidden;
+}
