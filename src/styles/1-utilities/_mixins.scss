@@ -128,8 +128,8 @@
 
 @mixin fluid ( $props, $min-vw, $max-vw, $min-val, $max-val )
 {
-  $val: $max-val - $min-val;
-  $vw: $max-vw - $min-vw;
+  $val: pure( $max-val - $min-val );
+  $vw: pure( $max-vw - $min-vw );
 
   @each $prop in $props { #{ $prop }: $min-val }
 
