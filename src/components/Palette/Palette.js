@@ -7,7 +7,8 @@ export default function ThemePalette ({
     border,
     color,
     hover
-  ]
+  ],
+  ...props
 })
 {
   const colorsStyle = useColors({
@@ -16,6 +17,7 @@ export default function ThemePalette ({
 
   return (
     <svg
+      { ...props }
       className='ThemePalette'
       role='button'
       style={ colorsStyle }
