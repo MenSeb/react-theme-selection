@@ -35,8 +35,8 @@
 
   footer
   {
-    @include size( $sizeFooter... );
+    @extend %flex-center;
 
-    @include flex-parent( $ai: center );
+    @include size( $sizeFooter... );
   }
 }
