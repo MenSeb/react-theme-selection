@@ -5,12 +5,12 @@ export default function ThemeViewer ()
   return (
     <section className='ThemeViewer'>
       <section className='ViewerWrapper'>
-        <h2 className='Title'>
+        <h3 className='Title'>
           Select any Theme Palette to update colors
-        </h2>
-        <h2 className='Title'>
+        </h3>
+        <h3 className='Title'>
           Hover any text, title or scrollbar to change color
-        </h2>
+        </h3>
         <p className='Text'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           Phasellus in justo aliquam, interdum turpis pharetra, aliquet magna.
