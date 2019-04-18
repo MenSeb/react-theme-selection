@@ -1,0 +1,6 @@
+.ThemeSelection
+{
+  @extend %flex-center;
+
+  @include size( $sizeSelection... );
+}
