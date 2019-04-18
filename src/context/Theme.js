@@ -15,7 +15,7 @@ function ThemeProvider ({ themes, ...props })
 {
   const refRoot = useRef()
 
-  const colors = useRef([ 'background', 'border', 'color', 'hover' ])
+  const { current: colors } = useRef([ 'background', 'border', 'color', 'hover' ])
 
   const THEMES = useMemo(
     () => themes.reduce(
