@@ -5,9 +5,9 @@ export default function ThemeViewer ()
   return (
     <section className='ThemeViewer'>
       <section className='ViewerWrapper'>
-        <h1 className='Title'>
+        <h2 className='Title'>
           Select any Theme Palette to update colors
-        </h1>
+        </h2>
         <h2 className='Title'>
           Hover any text, title or scrollbar to change color
         </h2>
