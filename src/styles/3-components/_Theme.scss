@@ -1,4 +1,6 @@
 .Theme
 {
   @extend %flex-center;
+
+  pointer-events: none;
 }
