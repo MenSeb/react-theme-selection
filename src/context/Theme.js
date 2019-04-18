@@ -17,6 +17,8 @@ function ThemeProvider ({ themes, ...props })
 
   const { current: colors } = useRef([ 'background', 'border', 'color', 'hover' ])
 
+  const { current: validNodeName } = useRef( 'svg' )
+
   const THEMES = useMemo(
     () => themes.reduce(
       ( obj, theme ) => ({
@@ -44,7 +46,12 @@ function ThemeProvider ({ themes, ...props })
   )
 
   const updateTheme = useCallback(
-    ({ target: { id } }) => THEMES[ id ].forEach( styleTheme ),
+    ({ target: { id, nodeName } }) =>
+    {
+      if ( nodeName !== validNodeName ) return
+
+      THEMES[ id ].forEach( styleTheme )
+    },
     []
   )
 
