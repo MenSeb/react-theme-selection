@@ -2,8 +2,5 @@
 {
   @extend %full-size;
 
-  overflow-x: hidden;
-  overflow-y: scroll;
-
-  pointer-events: none;
+  @include scrollbar( 7.5px );
 }
