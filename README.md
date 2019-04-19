@@ -25,6 +25,7 @@ The application is updated with CSS variables.
 ## Todos
 
 - [ ] Configure multiple palette formats i.e. circle, square, rounded, etc.
+- [ ] Save current theme with local storage.
 
 ## Scripts
 
