@@ -15,6 +15,7 @@ export default function ThemeAuthor ()
           className='Link'
           title='Github'
           href='https://github.com/MenSeb'
+          rel='noreferrer'
           target='_blank'
         >
           MenSeb
