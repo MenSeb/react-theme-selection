@@ -20,6 +20,7 @@ export default function ThemePalette ({
       { ...props }
       className='ThemePalette'
       role='button'
+      aria-label='update theme'
       style={ colorsStyle }
       viewBox='0 0 4 4'
     >
