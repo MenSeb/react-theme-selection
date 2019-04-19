@@ -25,7 +25,10 @@ The application is updated with CSS variables.
 ## Todos
 
 - [ ] Configure multiple palette formats i.e. circle, square, rounded, etc.
+- [ ] Evaluate contrast from each theme to filter invalid ones ( WCAG contrast 3.0 and 7.0 ).
 - [ ] Save current theme with local storage.
+- [ ] Configure mode for adding, editing and deleting themes.
+- [ ] Develop interface to create theme.
 
 ## Scripts
 
